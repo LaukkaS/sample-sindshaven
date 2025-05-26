@@ -34,16 +34,16 @@
   </style>
 </head>
 <body>
-  <button id="sendHope">Send din tanke</button>
+  <button id="sendHope">Frigør din tanke</button>
 
   <script>
-    //let bgImg;
+    let bgImg;
     let strokes = [];
     let currentStroke = [];
     let particles = [];
     let isDrawing = true;
     let customFont;
-    let bgVideo;
+  
 
 function preload() {
   bgVideo = createVideo(['video/natur.mp4']);
