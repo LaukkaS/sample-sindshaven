@@ -5,6 +5,7 @@
   <title>Håndskrevet Håb</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
   <style>
+
     
  @font-face {
       font-family: 'mencken-std''Courier New', Courier, monospace;
@@ -14,9 +15,28 @@
 }
 
     body {
+    
       margin: 0;
       overflow: hidden;
     }
+
+    #introText {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'mencken-std', serif;
+  font-size: 24px;
+  color: #faf8f0;
+  background: rgba(50, 98, 48, 0.6);
+  padding: 20px 30px;
+  border-radius: 12px;
+  max-width: 80%;
+  text-align: center;
+  z-index: 20;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
 
     #sendHope {
       position: absolute;
@@ -43,6 +63,12 @@
   </style>
 </head>
 <body>
+  <p id="introText">
+  Velkommen til Sindshaven.<br />
+  Her kan du give slip på en tanke, en bekymring eller bare noget, du har på hjerte.<br />
+  Skriv med din finger eller musen – og tryk på “Frigør tanke” for at lade det forsvinde.
+</p>
+
   <button id="sendHope">Frigør tanke</button>
 
   <script>
